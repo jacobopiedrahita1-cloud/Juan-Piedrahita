@@ -85,9 +85,17 @@
     transition:opacity .6s ease, visibility .6s ease;
   }
   #loader.loader-hide{opacity:0;visibility:hidden;pointer-events:none;}
-  .loader-inner{display:flex;flex-direction:column;align-items:center;gap:2px;}
-  .loader-video{width:360px;max-width:80vw;height:auto;display:block;mix-blend-mode:screen;}
-  .loader-founder{font-size:12.5px;letter-spacing:.04em;color:#9C9AA5;opacity:0;animation:fadeUp .5s ease 1.5s forwards;}
+  .loader-inner{display:flex;flex-direction:column;align-items:center;gap:6px;}
+  .loader-logo{width:170px;height:170px;max-width:55vw;overflow:visible;}
+  .v-left,.v-right,.v-triangle{transform-box:fill-box;transform-origin:center;}
+  .v-left{opacity:0;transform:translate(-26px,-8px);animation:vSlideLeft .7s cubic-bezier(.22,1,.36,1) .1s forwards;}
+  .v-right{opacity:0;transform:translate(26px,-8px);animation:vSlideRight .7s cubic-bezier(.22,1,.36,1) .1s forwards;}
+  .v-triangle{opacity:0;transform:scale(0);animation:trianglePop .45s cubic-bezier(.34,1.56,.64,1) .65s forwards;}
+  .loader-brand{font-family:var(--font-display);font-size:26px;letter-spacing:.1em;color:var(--text);opacity:0;animation:fadeUp .5s ease .95s forwards;}
+  .loader-founder{font-size:12.5px;letter-spacing:.04em;color:#9C9AA5;opacity:0;animation:fadeUp .5s ease 1.2s forwards;}
+  @keyframes vSlideLeft{to{opacity:1;transform:translate(0,0);}}
+  @keyframes vSlideRight{to{opacity:1;transform:translate(0,0);}}
+  @keyframes trianglePop{to{opacity:1;transform:scale(1);}}
   @keyframes fadeUp{0%{opacity:0;transform:translateY(8px);}100%{opacity:1;transform:translateY(0);}}
 
   /* ===== NAV ===== */
@@ -249,10 +257,17 @@
 <body class="loading">
 
 <!-- ===== LOADER =====
-     Animación real del logo Vyral (assets/vyral-logo-animation.mp4, ~2s). -->
+     Logo animado en SVG/CSS puro (sin video): aproximación vectorial del logo Vyral
+     (V + triángulo de play). Si más adelante tienes el SVG exacto de tu logo, reemplaza
+     los <polygon> de abajo por tus paths reales y las animaciones se aplican igual. -->
 <div id="loader">
   <div class="loader-inner">
-    <video class="loader-video" src="assets/vyral-logo-animation.mp4" autoplay muted playsinline></video>
+    <svg class="loader-logo" viewBox="0 0 100 100" aria-hidden="true">
+      <polygon class="v-left" points="18,8 40,8 56,86 46,96 34,80" fill="#F4F2EE"/>
+      <polygon class="v-right" points="82,8 60,8 44,86 54,96 66,80" fill="#F4F2EE"/>
+      <polygon class="v-triangle" points="46,55 46,75 61,65" fill="#FF4D2E"/>
+    </svg>
+    <span class="loader-brand">VYRAL</span>
     <span class="loader-founder" data-i18n="loader_founder">Fundado por Juan Piedrahita</span>
   </div>
 </div>
@@ -530,11 +545,11 @@
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
   // ===== Pantalla de carga =====
-  // Animación real (assets/vyral-logo-animation.mp4, ~2s). Si cambias el video,
-  // ajusta minDelay para que coincida con su duración.
+  // Animación en CSS/SVG puro, sin archivo externo. Si alargas o acortas las
+  // animaciones del logo (arriba en el CSS), ajusta minDelay para que coincida.
   (function () {
     const loader = document.getElementById('loader');
-    const minDelay = 2200;
+    const minDelay = 1900;
     setTimeout(() => {
       loader.classList.add('loader-hide');
       document.body.classList.remove('loading');
