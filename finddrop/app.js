@@ -43,9 +43,15 @@
     return !isDato(url) && /^(https?:|mailto:|tel:)/.test(url) ? url : null;
   }
 
+  // En el tema de Shopify los archivos viven en el CDN: la plantilla define FINDDROP_ASSET_BASE.
+  function assetUrl(src) {
+    var base = window.FINDDROP_ASSET_BASE;
+    return base && src.indexOf('assets/') === 0 ? base + src.slice(7) : src;
+  }
+
   function img(im, opts) {
     opts = opts || {};
-    return '<img src="' + im.src + '" width="' + im.w + '" height="' + im.h + '" alt="' + esc(opts.alt === '' ? '' : im.alt) + '"' +
+    return '<img src="' + assetUrl(im.src) + '" width="' + im.w + '" height="' + im.h + '" alt="' + esc(opts.alt === '' ? '' : im.alt) + '"' +
       (opts.eager ? ' fetchpriority="high"' : ' loading="lazy"') + ' decoding="async"' +
       (opts.cls ? ' class="' + opts.cls + '"' : '') +
       (opts.vt ? ' style="view-transition-name:' + opts.vt + '"' : '') + '>';

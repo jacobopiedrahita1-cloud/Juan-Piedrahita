@@ -571,3 +571,21 @@ body:not([data-view="product"]) .progress { display: none; }
   .stars i { opacity: .35; }
   ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
 }
+
+/* ---------- páginas del tema de Shopify (carrito, producto, búsqueda…) ---------- */
+.page-shell { min-height: 70svh; padding-top: calc(var(--header-h) + 48px); }
+.page-shell .wrap > * + * { margin-top: 20px; }
+.page-img { border-radius: var(--r-lg); width: 100%; max-width: 560px; }
+.page-form { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.page-form input[type="search"], .page-form input[type="password"], .page-form input[type="number"] {
+  font: inherit; font-size: 1rem; min-height: 48px; padding: 0 16px; border-radius: 999px;
+  border: 1px solid var(--line-light); background: var(--lilac); color: var(--night);
+}
+.page-form input[type="number"] { width: 84px; min-height: 40px; }
+.page-list, .cart-list { display: grid; gap: 10px; width: 100%; }
+.cart-list li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; padding: 14px 0; border-bottom: 1px solid var(--line-light); }
+.page-link { color: var(--purple); font-weight: 600; }
+.page-link--btn { background: none; border: 0; cursor: pointer; text-decoration: underline; }
+.rte { max-width: 65ch; }
+.rte img { border-radius: var(--r-md); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
