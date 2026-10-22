@@ -88,7 +88,7 @@ export function initGame(reducedMotion: boolean): void {
     const item = items[index];
     phaseNode.textContent = `Residuo ${index + 1} de ${items.length}`;
     setProgress(index);
-    card = el('div', { class: 'waste-card', role: 'group', 'aria-label': `Residuo: ${item.name}` },
+    card = el('div', { class: 'waste-card', role: 'group', tabindex: -1, 'aria-label': `Residuo: ${item.name}. Usa las teclas 1, 2 o 3.` },
       el('span', { class: 'waste-icon', 'aria-hidden': 'true' }, item.icon),
       el('span', { class: 'waste-name' }, item.name),
       el('span', { class: 'waste-hint', 'aria-hidden': 'true' }, 'Arrástrame o elige una caneca'),
@@ -109,6 +109,7 @@ export function initGame(reducedMotion: boolean): void {
     ));
     enableDrag(card);
     live.textContent = `Residuo ${index + 1}: ${item.name}. ¿Dónde va?`;
+    if (index > 0) card.focus({ preventScroll: true });
   }
 
   function enableDrag(node: HTMLElement) {
@@ -202,6 +203,7 @@ export function initGame(reducedMotion: boolean): void {
     const h = el('h3', { class: 'quiz-q', tabindex: -1 }, q.q);
     body.replaceChildren(el('div', {}, h, el('div', { class: 'quiz-options' }, ...opts), el('div', { class: 'feedback-slot' })));
     live.textContent = `Pregunta ${index + 1}: ${q.q}`;
+    h.focus({ preventScroll: true });
   }
 
   function answerQuiz(choice: number, opts: HTMLButtonElement[]) {

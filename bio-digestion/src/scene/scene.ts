@@ -21,7 +21,7 @@ interface StepState {
 }
 
 const STEPS: StepState[] = [
-  { pos: [1.6, 2.2, 13.2], look: [1.2, 0.9, 0], shift: 0.21, my: 0.27, residues: 'home', gas: 0.7, turbine: 0.45, balloon: 0.9, bubbles: 0.5, microbes: 0, digestate: 0 },
+  { pos: [1.6, 2.2, 13.2], look: [1.2, 0.9, 0], shift: 0.25, my: 0.27, residues: 'home', gas: 0.7, turbine: 0.45, balloon: 0.9, bubbles: 0.5, microbes: 0, digestate: 0 },
   { pos: [0.4, 1.3, 8.2], look: [0.2, 0.5, 0], shift: 0.22, residues: 'spread', gas: 0.15, turbine: 0.1, balloon: 0.55, bubbles: 0.3, microbes: 0, digestate: 0 },
   { pos: [-0.4, 4.4, 5.6], look: [0, 0.7, 0], shift: -0.2, residues: 'feed', gas: 0.15, turbine: 0.1, balloon: 0.55, bubbles: 0.5, microbes: 0.2, digestate: 0 },
   { pos: [0.5, 0.1, 4.3], look: [0, -0.35, 0], shift: 0.24, residues: 'feed', gas: 0.35, turbine: 0.1, balloon: 0.6, bubbles: 1, microbes: 1, digestate: 0 },
