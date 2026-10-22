@@ -1,0 +1,68 @@
+/* ===== Sistema de diseño BIO DIGESTIÓN ===== */
+:root {
+  /* Paleta */
+  --forest-950: #06140F;   /* verde bosque profundo: fondos premium */
+  --forest-900: #0B2219;   /* superficies oscuras */
+  --forest-800: #123528;   /* verde oscuro: textos y componentes sobre claro */
+  --forest-700: #1A4A37;
+  --emerald-500: #12A36B;  /* esmeralda: destacados */
+  --emerald-400: #2FC285;
+  --lime-400: #B6F24A;     /* lima: energía, partículas, acciones */
+  --lime-300: #CBF779;
+  --cream-50: #F6F3EA;     /* blanco cálido: superficies claras */
+  --cream-100: #EDE8DA;
+  --cream-200: #DFD8C5;
+  --sage-400: #8FA39A;     /* gris verdoso: secundarios sobre oscuro */
+  --sage-600: #56695F;     /* gris verdoso: secundarios sobre claro */
+  --organic-500: #C9873B;  /* tono orgánico: residuos y materia en descomposición */
+  --organic-700: #7A4E22;
+  --danger-500: #E5603B;
+  --red-lid: #C8282E;
+
+  /* Semánticos (oscuro por defecto) */
+  --bg: var(--forest-950);
+  --surface: var(--forest-900);
+  --text: var(--cream-50);
+  --text-2: var(--sage-400);
+  --line: rgba(246, 243, 234, 0.12);
+  --accent: var(--lime-400);
+
+  /* Tipografía */
+  --font-display: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, monospace;
+
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1.0625rem;
+  --fs-lg: clamp(1.1rem, 0.9rem + 0.6vw, 1.3rem);
+  --fs-xl: clamp(1.45rem, 1.1rem + 1.2vw, 2rem);
+  --fs-2xl: clamp(2rem, 1.3rem + 2.6vw, 3.4rem);
+  --fs-hero: clamp(3.1rem, 1.4rem + 7.2vw, 8.4rem);
+
+  /* Espaciado (base 4) */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px;
+  --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 144px;
+
+  --gutter: clamp(16px, 4vw, 40px);
+  --maxw: 1200px;
+
+  /* Radios, sombras */
+  --r-sm: 8px; --r-md: 14px; --r-lg: 22px; --r-xl: 32px; --r-pill: 999px;
+  --shadow-1: 0 1px 2px rgba(6, 20, 15, .08), 0 4px 16px rgba(6, 20, 15, .06);
+  --shadow-2: 0 2px 6px rgba(6, 20, 15, .1), 0 18px 48px rgba(6, 20, 15, .14);
+  --glow-lime: 0 0 0 1px rgba(182, 242, 74, .35), 0 8px 40px rgba(182, 242, 74, .18);
+
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --header-h: 68px;
+}
+
+.section-light {
+  --bg: var(--cream-50);
+  --surface: #FFFFFF;
+  --text: var(--forest-800);
+  --text-2: var(--sage-600);
+  --line: rgba(18, 53, 40, 0.12);
+  --accent: var(--emerald-500);
+}

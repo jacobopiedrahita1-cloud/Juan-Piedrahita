@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>BIO DIGESTIÓN · Energía a partir de residuos orgánicos</title>
+  <meta name="description" content="Proyecto de feria de ciencias: producción de metano a partir de residuos de frutas y verduras en un biodigestor escolar durante 40 días. I.E. Aureliano Flórez Cardona, Anserma, Caldas · 2026." />
+  <meta name="theme-color" content="#06140F" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:title" content="BIO DIGESTIÓN · De residuo a energía" />
+  <meta property="og:description" content="Cómo los residuos de frutas y verduras producen metano mediante digestión anaerobia. Experimento real de 40 días, explicación interactiva en 3D y el minijuego ECO RETO." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306140F'/%3E%3Cpath d='M50.6 17.4A24 24 0 1 0 55.4 36' fill='none' stroke='%23F6F3EA' stroke-width='4.6' stroke-linecap='round'/%3E%3Cpath d='M44.6 12.2 52.4 15.2 51.1 23.3' fill='none' stroke='%23F6F3EA' stroke-width='4.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19 45C18 31 27 20.5 44.5 19.5 45.5 37 35 46 21 46.2Z' fill='%2312A36B'/%3E%3Cpath d='M21.5 43.5 32.2 32.8' stroke='%2306140F' stroke-width='2.6' stroke-linecap='round'/%3E%3Ccircle cx='55.6' cy='36' r='5' fill='%23B6F24A'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Escena 3D fija detrás del hero y la narrativa -->
+  <div id="stage" class="stage" aria-hidden="true">
+    <canvas id="scene"></canvas>
+    <div class="stage-fallback" data-fallback></div>
+  </div>
+
+  <header class="site-header" data-header>
+    <a href="#inicio" class="brand" aria-label="BIO DIGESTIÓN, ir al inicio" data-logo="lockup"></a>
+    <nav class="nav" aria-label="Secciones">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" data-nav-toggle>
+        <span class="sr-only">Abrir menú</span><span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <ul id="nav-list" class="nav-list" data-nav-list>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#experimento">Experimento</a></li>
+        <li><a href="#eco-reto">ECO RETO</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#creditos">Créditos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ HERO ============ -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <p class="eyebrow" data-reveal><span class="dot" aria-hidden="true"></span> Feria de ciencias 2026 · Grado 11-A</p>
+        <h1 id="hero-title" class="hero-title" data-reveal>
+          <span class="line">De residuo</span>
+          <span class="line">a <em>energía.</em></span>
+        </h1>
+        <p class="hero-lede" data-reveal>Descubre cómo las cáscaras de frutas y los restos de verduras, en un recipiente sin oxígeno, se transforman mediante <strong>digestión anaerobia</strong> y producen <strong>metano</strong>.</p>
+        <div class="hero-actions" data-reveal>
+          <a href="#proceso" class="btn btn-primary">Explorar el proceso <span aria-hidden="true">→</span></a>
+          <a href="#experimento" class="btn btn-ghost">Ver resultados reales</a>
+        </div>
+        <dl class="hero-facts" data-reveal>
+          <div><dt>Duración</dt><dd>40 días</dd></div>
+          <div><dt>Metano acumulado</dt><dd>802 mL</dd></div>
+          <div><dt>Primer metano</dt><dd>Día 9</dd></div>
+        </dl>
+      </div>
+      <a href="#proceso" class="scroll-cue" aria-label="Desplázate para comenzar">
+        <span class="scroll-cue-track" aria-hidden="true"><span></span></span>
+        <span class="scroll-cue-text">Desliza</span>
+      </a>
+    </section>
+
+    <!-- ============ NARRATIVA ============ -->
+    <div id="proceso" class="story" data-story>
+      <section class="chapter" data-step="1" aria-labelledby="ch1-title">
+        <div class="chapter-card">
+          <p class="chapter-kicker"><span>01</span> El problema</p>
+          <h2 id="ch1-title">Lo que desechamos todavía tiene potencial.</h2>
+          <p>En el colegio y en el municipio, los restos de comida terminan con la basura común. Pero esas cáscaras y restos de verduras son <strong>biomasa</strong>: materia orgánica que todavía guarda energía química.</p>
+          <p>Con <strong>digestión anaerobia</strong> pueden dejar de ser basura y convertirse en materia prima para producir gas.</p>
+        </div>
+      </section>
+
+      <section class="chapter" data-step="2" aria-labelledby="ch2-title">
+        <div class="chapter-card">
+          <p class="chapter-kicker"><span>02</span> Alimentación</p>
+          <h2 id="ch2-title">Residuos + agua, sin oxígeno.</h2>
+          <p>Los residuos de frutas y verduras se colocan en un recipiente con agua. Luego se retira la mayor cantidad posible de oxígeno y se sella: así se favorece a los microorganismos que producen los gases.</p>
+          <ul class="mini-list">
+            <li><b>Recipiente</b> de vidrio con tapa sellada</li>
+            <li><b>Mezcla</b> de residuos orgánicos y agua</li>
+            <li><b>Conexión</b> por manguera transparente para conducir el gas</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="chapter" data-step="3" aria-labelledby="ch3-title">
+        <div class="chapter-card chapter-card-wide">
+          <p class="chapter-kicker"><span>03</span> Digestión anaerobia</p>
+          <h2 id="ch3-title">Cuatro etapas, una cadena de microorganismos.</h2>
+          <p>Distintos grupos de microorganismos descomponen la materia orgánica en etapas sucesivas. Por eso el metano no aparece de inmediato.</p>
+          <ol class="stages" data-stages>
+            <li class="stage-item">
+              <span class="stage-n">1</span>
+              <div><h3>Hidrólisis</h3><p>Los compuestos complejos (azúcares, proteínas, grasas) se rompen en sustancias solubles.</p></div>
+            </li>
+            <li class="stage-item">
+              <span class="stage-n">2</span>
+              <div><h3>Acidogénesis</h3><p>Esas sustancias se transforman en ácidos orgánicos.</p></div>
+            </li>
+            <li class="stage-item">
+              <span class="stage-n">3</span>
+              <div><h3>Acetogénesis</h3><p>Los ácidos se convierten en acetato, hidrógeno (H₂) y dióxido de carbono (CO₂).</p></div>
+            </li>
+            <li class="stage-item">
+              <span class="stage-n">4</span>
+              <div><h3>Metanogénesis</h3><p>Los microorganismos metanogénicos producen <b>metano (CH₄)</b>.</p></div>
+            </li>
+          </ol>
+          <p class="note">Animación conceptual simplificada, no una observación microscópica del experimento. Fuente: Varnero Moreno (2011).</p>
+        </div>
+      </section>
+
+      <section class="chapter" data-step="4" aria-labelledby="ch4-title">
+        <div class="chapter-card">
+          <p class="chapter-kicker"><span>04</span> Gas y almacenamiento</p>
+          <h2 id="ch4-title">Biogás no es lo mismo que metano.</h2>
+          <p>El gas sube, sale por la manguera y se acumula en un depósito. El <strong>biogás</strong> es una <em>mezcla</em> de gases; el <strong>metano</strong> es su componente principal y el que tiene valor energético.</p>
+          <figure class="composition" aria-labelledby="comp-cap">
+            <div class="comp-bar" role="img" aria-label="Composición típica del biogás según la literatura: metano entre 55 y 70 por ciento, dióxido de carbono entre 30 y 45 por ciento.">
+              <span class="comp-ch4" style="--w:62.5%"><b>CH₄</b> 55–70 %</span>
+              <span class="comp-co2" style="--w:37.5%"><b>CO₂</b> 30–45 %</span>
+            </div>
+            <figcaption id="comp-cap">Composición típica según la literatura (Varnero Moreno, 2011). <strong>No es una medición de nuestro experimento</strong>: allí no se midió la composición del gas.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="chapter" data-step="5" aria-labelledby="ch5-title">
+        <div class="chapter-card">
+          <p class="chapter-kicker"><span>05</span> Conversión energética</p>
+          <span class="badge badge-concept">Propuesta conceptual · no demostrada</span>
+          <h2 id="ch5-title">Del gas al movimiento, del movimiento a la electricidad.</h2>
+          <p>El diseño inicial proponía conducir el gas por un tubo hacia una <strong>turbina</strong>. Su giro (energía mecánica) movería un <strong>generador</strong>, que la convierte en energía eléctrica por inducción electromagnética. En instalaciones reales, el biogás se quema como combustible en motores o turbinas preparados para ello.</p>
+          <div class="callout">
+            <p><strong>Importante:</strong> esta etapa fue un planteamiento del diseño inicial y <strong>no forma parte de las mediciones</strong>. Los 802 mL de metano obtenidos no generaron electricidad ni movieron una turbina; según el informe, ese volumen no alcanza para un uso energético práctico.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter" data-step="6" aria-labelledby="ch6-title">
+        <div class="chapter-card">
+          <p class="chapter-kicker"><span>06</span> Digestato</p>
+          <h2 id="ch6-title">Lo que queda también puede servir.</h2>
+          <p>Después de la digestión queda un lodo llamado <strong>digestato</strong>. En sistemas bien controlados puede usarse como fertilizante o enmienda del suelo.</p>
+          <p class="note">Su aprovechamiento depende de su composición y de su seguridad. El residuo de nuestro experimento <strong>no fue analizado</strong>, así que no afirmamos que esté listo para aplicarse a plantas.</p>
+        </div>
+      </section>
+
+      <section class="chapter chapter-end" data-step="7" aria-labelledby="ch7-title">
+        <div class="chapter-card chapter-card-center">
+          <p class="chapter-kicker"><span>07</span> Conclusión</p>
+          <h2 id="ch7-title" class="quote">Los residuos no son solamente basura: también pueden ser el comienzo de una nueva fuente de energía.</h2>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ EXPERIMENTO ============ -->
+    <section id="experimento" class="section section-light" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow-dark"><span class="dot" aria-hidden="true"></span> Laboratorio · Datos reales</p>
+          <h2 id="exp-title" class="section-title">El experimento real: 40 días.</h2>
+          <p class="section-lede">Hasta aquí, la explicación teórica. Esto es lo que <strong>sí medimos</strong> en nuestro biodigestor escolar con residuos de frutas y verduras.</p>
+        </header>
+
+        <div class="exp-grid">
+          <figure class="photo-card">
+            <img data-photo alt="Montaje real del biodigestor: un frasco de vidrio con tapa roja lleno de residuos de frutas y verduras en agua, sobre una base de varilla, conectado por una manguera transparente a una botella plástica." width="1400" height="1050" loading="lazy" decoding="async" />
+            <figcaption><span class="badge badge-real">Fotografía real</span> Montaje del biodigestor escolar durante el estudio.</figcaption>
+          </figure>
+          <div class="kpis" data-kpis></div>
+        </div>
+
+        <div class="block">
+          <h3 class="block-title">Cronología registrada</h3>
+          <p class="block-lede">Seis momentos documentados. Selecciona uno para ver la observación.</p>
+          <div class="timeline" data-timeline></div>
+        </div>
+
+        <div class="block peak-block" data-peak></div>
+
+        <aside class="block why-no-curve">
+          <h3 class="block-title">¿Por qué no hay una curva diaria?</h3>
+          <p>Solo conservamos el total acumulado (802 mL) y la producción del día de máximo (200 mL, día 14). Dibujar una curva día a día obligaría a <strong>inventar</strong> valores que no medimos, así que mostramos solo lo registrado. Los promedios son cálculos aproximados y no reemplazan un registro diario.</p>
+        </aside>
+
+        <div class="two-col">
+          <div class="block">
+            <h3 class="block-title">Limitaciones del estudio</h3>
+            <p class="block-lede">Reconocerlas también es hacer ciencia.</p>
+            <ul class="limits" data-limits></ul>
+          </div>
+          <div class="block">
+            <h3 class="block-title">Mejoras para futuros ensayos</h3>
+            <ol class="improvements" data-improvements></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEGURIDAD ============ -->
+    <section id="seguridad" class="section section-safety" aria-labelledby="safe-title">
+      <div class="container safety">
+        <div class="safety-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="48" height="48"><path d="M24 5 44 41H4Z" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round"/><path d="M24 18v11" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/><circle cx="24" cy="35" r="2.2" fill="currentColor"/></svg>
+        </div>
+        <div>
+          <h2 id="safe-title">Seguridad y responsabilidad científica</h2>
+          <ul class="safety-list">
+            <li>El <strong>metano es inflamable</strong>. Los sistemas reales de biogás requieren diseño, ventilación y medidas de seguridad adecuadas.</li>
+            <li>No intentes encender, inhalar ni manipular el gas de un biodigestor. En esta feria <strong>no se hacen demostraciones con llama</strong>.</li>
+            <li>Este es un experimento escolar a pequeña escala. No se midió la pureza del metano ni se produjo electricidad, y no afirmamos reducciones concretas de emisiones.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ECO RETO ============ -->
+    <section id="eco-reto" class="section section-dark" aria-labelledby="game-title">
+      <div class="container">
+        <header class="section-head section-head-center">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Minijuego educativo</p>
+          <h2 id="game-title" class="section-title">ECO RETO: salva los residuos</h2>
+          <p class="section-lede">¿Qué puede entrar a un biodigestor? Clasifica los residuos y luego pon a prueba lo que aprendiste.</p>
+        </header>
+        <div class="game" data-game></div>
+      </div>
+    </section>
+
+    <!-- ============ OPINIONES ============ -->
+    <section id="opiniones" class="section section-light" aria-labelledby="rev-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow-dark"><span class="dot" aria-hidden="true"></span> Tu opinión</p>
+          <h2 id="rev-title" class="section-title">¿Qué opinas de BIO DIGESTIÓN?</h2>
+        </header>
+        <div class="reviews" data-reviews></div>
+      </div>
+    </section>
+
+    <!-- ============ CRÉDITOS ============ -->
+    <section id="creditos" class="section credits" aria-labelledby="cred-title">
+      <div class="container credits-inner">
+        <div class="credits-logo" data-logo="mark-xl"></div>
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Desarrollado por</p>
+        <h2 id="cred-title" class="sr-only">Créditos del proyecto</h2>
+        <ul class="credits-names" data-team></ul>
+        <dl class="credits-meta" data-team-meta></dl>
+        <p class="credits-quote">“La ciencia empieza cuando miramos de nuevo lo que desechamos.”</p>
+      </div>
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <h3 class="footer-title">Referencias</h3>
+            <ul class="refs" data-refs></ul>
+          </div>
+          <p class="footer-small">Proyecto escolar de feria de ciencias. Las animaciones son representaciones conceptuales; los datos experimentales provienen exclusivamente del informe del proyecto.</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <noscript><p class="noscript">Esta experiencia usa JavaScript para el 3D, el minijuego y las opiniones. El contenido principal sigue disponible arriba.</p></noscript>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
