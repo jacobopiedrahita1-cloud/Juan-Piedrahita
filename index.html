@@ -3,685 +3,520 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Vyral | Agencia de Edición de Video</title>
-<meta name="description" content="Vyral — agencia de edición de video fundada por Juan Piedrahita. Reels, shorts, contenido de marca y videos publicitarios que retienen atención y generan resultados." />
-<meta name="keywords" content="agencia de edición de video, editor de video, reels, shorts, contenido para marcas, video publicitario, motion graphics, video editing agency, Colombia" />
+<title>Vyral | Videos, redes y páginas web para negocios</title>
+<meta name="description" content="Vyral es una agencia de marketing digital en Colombia. Hacemos videos que detienen el scroll, manejamos tus redes y creamos páginas web para que tu negocio se vea y la gente te escriba." />
+<meta name="keywords" content="agencia de marketing digital, manejo de redes sociales, reels para negocios, páginas web, community manager, video para marcas, Colombia, Vyral" />
 <meta name="robots" content="index, follow" />
-<meta property="og:title" content="Vyral | Agencia de Edición de Video" />
-<meta property="og:description" content="Edición de video para marcas que quieren contenido que retiene atención y convierte. Mira el portafolio y cotiza tu proyecto." />
+<meta name="theme-color" content="#0A0A0C" />
+<meta property="og:title" content="Vyral | Hacemos que tu negocio se vea" />
+<meta property="og:description" content="Videos, redes sociales y páginas web para negocios que son buenos… pero en redes no se nota." />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="es_CO" />
-<!-- SEO: cuando publiques la página, reemplaza esta URL por la real (ej. https://tuusuario.github.io/madcor-muebles/juan-piedrahita/) -->
-<meta property="og:url" content="https://TU-DOMINIO-AQUI/juan-piedrahita/" />
+<meta property="og:image" content="assets/vyral-logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet" />
 <link rel="icon" type="image/png" href="assets/vyral-icon.png" />
 
 <style>
   :root{
-    --bg:#0A0A0C;
-    --bg-alt:#111114;
-    --card:#151517;
-    --card-2:#1B1B1F;
-    --border:rgba(255,255,255,0.09);
-    --border-strong:rgba(255,255,255,0.16);
-    --text:#F4F2EE;
-    --text-muted:#9C9AA5;
-    --text-dim:#6C6A75;
-    --accent:#FF4D2E;
-    --accent-2:#7B6BFF;
-    --accent-soft:rgba(255,77,46,0.12);
-    --radius:18px;
-    --radius-sm:12px;
-    --font-display:'Anton', sans-serif;
-    --font-body:'Inter', sans-serif;
-    --transition:0.3s cubic-bezier(.4,0,.2,1);
+    --bg:#0A0A0C; --bg-alt:#111114; --card:#151517; --card-2:#1B1B1F;
+    --border:rgba(255,255,255,0.09); --border-strong:rgba(255,255,255,0.16);
+    --text:#F4F2EE; --text-muted:#A3A1AB; --text-dim:#6C6A75;
+    --accent:#FC3402; --accent-soft:rgba(252,52,2,0.12); --green:#25D366;
+    --radius:20px; --radius-sm:12px;
+    --font-display:'Anton',sans-serif; --font-body:'Inter',sans-serif; --font-serif:'Instrument Serif',serif;
+    --t:0.3s cubic-bezier(.4,0,.2,1);
   }
-
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
-  body{
-    background:var(--bg);
-    color:var(--text);
-    font-family:var(--font-body);
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
+  body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
   body.loading{overflow:hidden;height:100vh;}
-  img{max-width:100%;display:block;}
+  img,video{max-width:100%;display:block;}
   a{color:inherit;text-decoration:none;}
   ul{list-style:none;}
   section{position:relative;}
   .container{max-width:1180px;margin:0 auto;padding:0 24px;}
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:8px;
-    font-size:12.5px;letter-spacing:0.14em;text-transform:uppercase;
-    color:var(--accent);font-weight:700;margin-bottom:16px;
-  }
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:16px;}
   .eyebrow::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);}
-  h1,h2,h3{font-family:var(--font-display);font-weight:400;letter-spacing:0.01em;line-height:1.05;text-transform:uppercase;}
-  h2{font-size:clamp(28px,4.2vw,46px);}
-  .section-head{max-width:640px;margin-bottom:48px;}
+  h1,h2{font-family:var(--font-display);font-weight:400;letter-spacing:.01em;line-height:1.02;text-transform:uppercase;}
+  h2{font-size:clamp(30px,4.4vw,50px);}
+  h3{font-weight:700;font-size:19px;line-height:1.3;}
+  .serif{font-family:var(--font-serif);font-style:italic;text-transform:none;letter-spacing:0;color:var(--accent);font-weight:400;}
+  .section-head{max-width:660px;margin-bottom:52px;}
   .section-head p{color:var(--text-muted);font-size:17px;margin-top:14px;}
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;gap:10px;
-    padding:16px 30px;border-radius:100px;font-weight:700;font-size:15px;
-    cursor:pointer;border:1px solid transparent;transition:var(--transition);
-    white-space:nowrap;
-  }
-  .btn-primary{background:var(--accent);color:#0A0A0C;}
-  .btn-primary:hover{background:#ff6947;transform:translateY(-2px);box-shadow:0 12px 30px -8px rgba(255,77,46,0.55);}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;border-radius:100px;font-weight:700;font-size:15px;cursor:pointer;border:1px solid transparent;transition:var(--t);white-space:nowrap;}
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:#ff5122;transform:translateY(-2px);box-shadow:0 12px 30px -8px rgba(252,52,2,.6);}
   .btn-outline{background:transparent;color:var(--text);border-color:var(--border-strong);}
-  .btn-outline:hover{border-color:var(--text);background:rgba(255,255,255,0.04);}
+  .btn-outline:hover{border-color:var(--text);background:rgba(255,255,255,.04);}
   .btn svg{width:18px;height:18px;flex-shrink:0;}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1);}
+  .reveal.in{opacity:1;transform:none;}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;} .marquee{animation:none !important;}}
 
-  /* ===== LOADER ===== */
-  #loader{
-    position:fixed;inset:0;z-index:999;background:#000;
-    display:flex;align-items:center;justify-content:center;
-    transition:opacity .6s ease, visibility .6s ease;
-  }
+  /* LOADER */
+  #loader{position:fixed;inset:0;z-index:999;background:#000;display:flex;align-items:center;justify-content:center;transition:opacity .6s ease,visibility .6s ease;}
   #loader.loader-hide{opacity:0;visibility:hidden;pointer-events:none;}
-  .loader-inner{display:flex;flex-direction:column;align-items:center;gap:6px;}
-  .loader-image{
-    width:300px;max-width:68vw;height:auto;display:block;
-    opacity:0;transform:scale(.85);
-    animation:logoReveal .8s cubic-bezier(.22,1,.36,1) .1s forwards;
-  }
-  .loader-founder{font-size:12.5px;letter-spacing:.04em;color:#9C9AA5;opacity:0;animation:fadeUp .5s ease .9s forwards;}
+  .loader-image{width:280px;max-width:64vw;opacity:0;transform:scale(.85);animation:logoReveal .8s cubic-bezier(.22,1,.36,1) .1s forwards;}
   @keyframes logoReveal{to{opacity:1;transform:scale(1);}}
-  @keyframes fadeUp{0%{opacity:0;transform:translateY(8px);}100%{opacity:1;transform:translateY(0);}}
 
-  /* ===== NAV ===== */
-  header{
-    position:fixed;top:0;left:0;right:0;z-index:100;
-    background:rgba(10,10,12,0.72);backdrop-filter:blur(14px);
-    border-bottom:1px solid var(--border);
-  }
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1180px;margin:0 auto;}
-  .logo{font-family:var(--font-display);font-size:22px;letter-spacing:0.06em;text-transform:uppercase;display:flex;align-items:center;gap:10px;}
-  .logo-icon{border-radius:6px;flex-shrink:0;}
-  .nav-links{display:flex;align-items:center;gap:36px;}
-  .nav-links a{font-size:14.5px;font-weight:600;color:var(--text-muted);transition:var(--transition);}
+  /* NAV */
+  header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,12,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border);}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1180px;margin:0 auto;}
+  .logo{font-family:var(--font-display);font-size:22px;letter-spacing:.08em;display:flex;align-items:center;gap:10px;}
+  .logo img{border-radius:6px;}
+  .nav-links{display:flex;align-items:center;gap:32px;}
+  .nav-links a{font-size:14.5px;font-weight:600;color:var(--text-muted);transition:var(--t);}
   .nav-links a:hover{color:var(--text);}
-  .nav-cta{display:flex;align-items:center;gap:14px;}
-  .lang-btn{
-    padding:8px 14px;border-radius:100px;border:1px solid var(--border-strong);
-    background:transparent;color:var(--text-muted);font-size:12.5px;font-weight:700;
-    letter-spacing:.05em;cursor:pointer;transition:var(--transition);
-  }
+  .nav-cta{display:flex;align-items:center;gap:12px;}
+  .nav-cta .btn{padding:11px 22px;font-size:14px;}
+  .lang-btn{padding:8px 14px;border-radius:100px;border:1px solid var(--border-strong);background:transparent;color:var(--text-muted);font-size:12.5px;font-weight:700;letter-spacing:.05em;cursor:pointer;transition:var(--t);}
   .lang-btn:hover{color:var(--text);border-color:var(--text);}
   .nav-toggle{display:none;background:none;border:none;color:var(--text);font-size:26px;cursor:pointer;}
-
-  @media (max-width:860px){
-    .nav-links{
-      position:fixed;top:70px;left:0;right:0;background:var(--bg-alt);
-      flex-direction:column;padding:28px 24px;gap:22px;
-      border-bottom:1px solid var(--border);
-      transform:translateY(-130%);opacity:0;transition:var(--transition);
-    }
-    .nav-links.open{transform:translateY(0);opacity:1;}
+  @media (max-width:900px){
+    .nav-links{position:fixed;top:66px;left:0;right:0;background:var(--bg-alt);flex-direction:column;padding:28px 24px;gap:22px;border-bottom:1px solid var(--border);transform:translateY(-130%);opacity:0;transition:var(--t);}
+    .nav-links.open{transform:none;opacity:1;}
     .nav-toggle{display:block;}
-    .nav-cta .btn-outline{display:none;}
+    .nav-cta .btn{display:none;}
   }
 
-  /* ===== HERO ===== */
-  .hero{padding:170px 0 100px;overflow:hidden;}
-  .hero::before{
-    content:'';position:absolute;top:-200px;right:-150px;width:560px;height:560px;
-    background:radial-gradient(circle,rgba(255,77,46,0.22),transparent 70%);
-    filter:blur(40px);pointer-events:none;
-  }
-  .hero::after{
-    content:'';position:absolute;bottom:-220px;left:-180px;width:520px;height:520px;
-    background:radial-gradient(circle,rgba(123,107,255,0.16),transparent 70%);
-    filter:blur(40px);pointer-events:none;
-  }
-  .hero-inner{position:relative;z-index:2;max-width:820px;}
-  .hero h1{font-size:clamp(40px,7.2vw,84px);margin-bottom:24px;}
-  .hero h1 em{font-style:normal;color:var(--accent);}
-  .hero p.lead{font-size:19px;color:var(--text-muted);max-width:560px;margin-bottom:36px;}
-  .hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:56px;}
-  .hero-tags{display:flex;flex-wrap:wrap;gap:10px;}
-  .tag{
-    padding:8px 16px;border:1px solid var(--border-strong);border-radius:100px;
-    font-size:13px;color:var(--text-muted);font-weight:600;
-  }
+  /* HERO */
+  .hero{padding:150px 0 90px;overflow:hidden;}
+  .hero::before{content:'';position:absolute;top:-220px;right:-160px;width:640px;height:640px;background:radial-gradient(circle,rgba(252,52,2,.26),transparent 68%);filter:blur(40px);pointer-events:none;}
+  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center;position:relative;z-index:2;}
+  .hero h1{font-size:clamp(44px,7vw,88px);margin-bottom:24px;}
+  .hero h1 .serif{font-size:1.08em;}
+  .hero p.lead{font-size:19px;color:var(--text-muted);max-width:560px;margin-bottom:34px;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:40px;}
+  .hero-pills{display:flex;flex-wrap:wrap;gap:10px;}
+  .pill{padding:8px 16px;border:1px solid var(--border-strong);border-radius:100px;font-size:13px;color:var(--text-muted);font-weight:600;}
+  .phone{position:relative;width:min(300px,100%);margin:0 auto;aspect-ratio:9/19;border-radius:44px;background:#000;border:10px solid #1d1d22;box-shadow:0 40px 90px -20px rgba(252,52,2,.35),0 0 0 1px rgba(255,255,255,.06);overflow:hidden;}
+  .phone video{width:100%;height:100%;object-fit:cover;}
+  .phone .bubble{position:absolute;left:14px;right:14px;padding:12px 14px;border-radius:16px;background:rgba(20,20,24,.86);backdrop-filter:blur(8px);border:1px solid var(--border-strong);font-size:13px;display:flex;align-items:center;gap:10px;animation:bubble 6s ease-in-out infinite;}
+  .phone .bubble i{width:28px;height:28px;border-radius:8px;background:var(--green);flex:none;display:grid;place-items:center;}
+  .phone .b1{bottom:96px;} .phone .b2{bottom:30px;animation-delay:1.2s;}
+  .phone .bubble small{display:block;color:var(--text-muted);font-size:11.5px;}
+  @keyframes bubble{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;} .hero{padding:130px 0 70px;} .phone{width:240px;}}
 
-  /* ===== MARQUEE ===== */
+  /* MARQUEE */
   .marquee-wrap{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-alt);padding:18px 0;overflow:hidden;}
-  .marquee{display:flex;width:max-content;animation:scroll 26s linear infinite;}
-  .marquee span{
-    font-family:var(--font-display);font-size:22px;text-transform:uppercase;
-    color:var(--text-dim);padding:0 28px;display:flex;align-items:center;gap:28px;
-    white-space:nowrap;
-  }
+  .marquee{display:flex;width:max-content;animation:scroll 30s linear infinite;}
+  .marquee span{font-family:var(--font-display);font-size:22px;text-transform:uppercase;color:var(--text-dim);padding:0 26px;display:flex;align-items:center;gap:26px;white-space:nowrap;}
   .marquee span::after{content:'✦';color:var(--accent);}
   @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
-  /* ===== PORTFOLIO ===== */
-  .portfolio{padding:110px 0 100px;}
-  .video-grid{
-    display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px;
-  }
-  .video-card{
-    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-    overflow:hidden;transition:var(--transition);
-  }
+  /* SERVICES */
+  .services{padding-top:110px;padding-bottom:110px;}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .svc{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:34px 30px;transition:var(--t);display:flex;flex-direction:column;}
+  .svc:hover{border-color:var(--accent);transform:translateY(-4px);}
+  .svc .num{font-family:var(--font-display);font-size:15px;color:var(--accent);letter-spacing:.1em;margin-bottom:22px;}
+  .svc .icon{width:54px;height:54px;border-radius:14px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;margin-bottom:22px;}
+  .svc .icon svg{width:26px;height:26px;}
+  .svc h3{font-size:22px;margin-bottom:12px;}
+  .svc p{color:var(--text-muted);font-size:15px;margin-bottom:20px;}
+  .svc ul{margin-top:auto;display:flex;flex-direction:column;gap:9px;}
+  .svc li{font-size:14px;color:var(--text);display:flex;gap:10px;align-items:flex-start;}
+  .svc li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:8px;flex:none;}
+  .report{margin-top:22px;background:linear-gradient(120deg,#1a0f0c,#151517 60%);border:1px solid var(--border-strong);border-radius:var(--radius);padding:28px 30px;display:flex;align-items:center;gap:24px;}
+  .report .icon{width:54px;height:54px;border-radius:14px;background:var(--accent);display:grid;place-items:center;flex:none;}
+  .report h3{margin-bottom:4px;} .report p{color:var(--text-muted);font-size:15px;}
+  @media (max-width:900px){.svc-grid{grid-template-columns:1fr;} .report{flex-direction:column;align-items:flex-start;}}
+
+  /* CLIENTS */
+  .clients{padding:100px 0;background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+  .client-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;}
+  .client{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px 22px;transition:var(--t);}
+  .client:hover{border-color:var(--border-strong);}
+  .client .mono{width:46px;height:46px;border-radius:12px;background:var(--card-2);border:1px solid var(--border-strong);display:grid;place-items:center;font-family:var(--font-display);font-size:18px;color:var(--accent);margin-bottom:16px;}
+  .client h3{font-size:17px;margin-bottom:4px;}
+  .client .type{font-size:13px;color:var(--text-dim);margin-bottom:12px;}
+  .client .tags{display:flex;flex-wrap:wrap;gap:6px;}
+  .client .tags span{font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:5px 10px;border-radius:100px;background:var(--accent-soft);color:#ff7a52;}
+
+  /* TESTIMONIAL */
+  .quote{padding-top:100px;padding-bottom:30px;}
+  .quote-box{max-width:900px;margin:0 auto;text-align:center;}
+  .quote-box .mark{font-family:var(--font-serif);font-size:120px;line-height:.6;color:var(--accent);display:block;margin-bottom:10px;}
+  .quote-box blockquote{font-family:var(--font-serif);font-style:italic;font-size:clamp(30px,4.2vw,50px);line-height:1.18;}
+  .quote-box cite{display:block;margin-top:24px;font-style:normal;font-size:15px;color:var(--text-muted);font-weight:600;}
+  .quote-box cite b{color:var(--text);}
+
+  /* PORTFOLIO */
+  .portfolio{padding-top:100px;padding-bottom:100px;}
+  .video-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .video-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:var(--t);}
   .video-card:hover{border-color:var(--border-strong);transform:translateY(-4px);}
-  .video-card .media{
-    position:relative;width:100%;aspect-ratio:var(--ar,16/9);background:#000;
-  }
-  .video-card .media iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
-  .video-card .meta{padding:18px 20px 20px;}
-  .video-card .meta .cat{font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;display:block;}
-  .video-card .meta h3{font-family:var(--font-body);font-weight:700;font-size:16px;text-transform:none;letter-spacing:0;}
+  .video-card .media{position:relative;width:100%;aspect-ratio:9/16;background:#000;}
+  .video-card iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  @media (max-width:1000px){.video-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:520px){.video-grid{grid-template-columns:1fr 1fr;gap:10px;}}
 
-  /* Placeholder (video pendiente de agregar) */
-  .video-card.placeholder .media{
-    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
-    background:repeating-linear-gradient(135deg,#151517,#151517 10px,#19191c 10px,#19191c 20px);
-    border:1px dashed var(--border-strong);
-  }
-  .video-card.placeholder .media .plus{
-    width:46px;height:46px;border-radius:50%;border:1px solid var(--border-strong);
-    display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--text-dim);
-  }
-  .video-card.placeholder .media span{font-size:12.5px;color:var(--text-dim);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;}
-  .video-card.placeholder .meta h3{color:var(--text-dim);}
+  /* WEBS */
+  .webs{padding:100px 0;background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+  .web-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+  .web{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:var(--t);display:block;}
+  .web:hover{border-color:var(--accent);transform:translateY(-4px);}
+  .web .bar{display:flex;align-items:center;gap:7px;padding:12px 16px;background:#1d1d22;}
+  .web .bar i{width:10px;height:10px;border-radius:50%;background:#3a3a42;display:block;}
+  .web .bar span{margin-left:10px;font-size:12.5px;color:var(--text-dim);}
+  .web img{width:100%;aspect-ratio:1200/605;object-fit:cover;}
+  .web .meta{padding:20px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+  .web .meta p{color:var(--text-muted);font-size:14px;}
+  .web .go{font-size:14px;font-weight:700;color:var(--accent);white-space:nowrap;}
+  @media (max-width:800px){.web-grid{grid-template-columns:1fr;}}
 
-  /* ===== SERVICES ===== */
-  .services{padding:100px 0;background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
-  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
-  .service-card{
-    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-    padding:30px 26px;transition:var(--transition);
-  }
-  .service-card:hover{border-color:var(--accent);}
-  .service-card .icon{
-    width:48px;height:48px;border-radius:12px;background:var(--accent-soft);
-    display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--accent);
-  }
-  .service-card .icon svg{width:24px;height:24px;}
-  .service-card h3{font-family:var(--font-body);font-weight:700;font-size:18px;text-transform:none;letter-spacing:0;margin-bottom:10px;}
-  .service-card p{color:var(--text-muted);font-size:14.5px;}
-
-  /* ===== PROCESS ===== */
-  .process{padding:110px 0;}
-  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;counter-reset:step;position:relative;}
-  .step{padding:0 24px 24px 0;position:relative;}
-  .step .num{
-    font-family:var(--font-display);font-size:44px;color:var(--accent);opacity:0.5;margin-bottom:14px;display:block;
-  }
-  .step h3{font-family:var(--font-body);font-weight:700;font-size:17px;text-transform:none;letter-spacing:0;margin-bottom:8px;}
+  /* PROCESS */
+  .process{padding-top:110px;padding-bottom:110px;}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .step{border-top:2px solid var(--border-strong);padding-top:22px;}
+  .step .num{font-family:var(--font-display);font-size:44px;color:var(--accent);display:block;margin-bottom:12px;}
+  .step h3{font-size:18px;margin-bottom:8px;}
   .step p{color:var(--text-muted);font-size:14.5px;}
+  @media (max-width:900px){.steps{grid-template-columns:1fr 1fr;gap:30px 18px;}}
+  @media (max-width:520px){.steps{grid-template-columns:1fr;}}
 
-  /* ===== CONTACT ===== */
-  .contact{padding:110px 0 60px;}
-  .contact-box{
-    background:linear-gradient(135deg,#171012,#111114);
-    border:1px solid var(--border-strong);border-radius:28px;
-    padding:64px 48px;text-align:center;position:relative;overflow:hidden;
-  }
-  .contact-box::before{
-    content:'';position:absolute;inset:0;
-    background:radial-gradient(circle at 50% 0%,rgba(255,77,46,0.18),transparent 60%);
-    pointer-events:none;
-  }
-  .contact-box h2{margin-bottom:16px;}
-  .contact-box p{color:var(--text-muted);font-size:17px;max-width:540px;margin:0 auto 36px;}
-  .contact-actions{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;position:relative;z-index:2;}
-  .contact-note{margin-top:28px;font-size:13.5px;color:var(--text-dim);position:relative;z-index:2;}
+  /* CONTACT */
+  .contact{padding-top:40px;padding-bottom:90px;}
+  .contact-box{background:linear-gradient(135deg,#1a0f0c,#111114);border:1px solid var(--border-strong);border-radius:30px;padding:70px 48px;text-align:center;position:relative;overflow:hidden;}
+  .contact-box::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(252,52,2,.22),transparent 60%);pointer-events:none;}
+  .contact-box h2{margin-bottom:16px;position:relative;}
+  .contact-box p{color:var(--text-muted);font-size:17px;max-width:540px;margin:0 auto 36px;position:relative;}
+  .contact-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;position:relative;z-index:2;}
+  .contact-note{margin-top:26px;font-size:13.5px;color:var(--text-dim);position:relative;}
+  @media (max-width:600px){.contact-box{padding:50px 22px;}}
 
-  /* ===== FOOTER ===== */
-  footer{padding:50px 0 40px;border-top:1px solid var(--border);}
+  /* FOOTER */
+  footer{padding:44px 0 36px;border-top:1px solid var(--border);}
   .footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;}
-  .footer-inner .logo{font-size:18px;}
-  .socials{display:flex;gap:18px;}
-  .socials a{color:var(--text-muted);font-size:14px;font-weight:600;transition:var(--transition);}
+  .socials{display:flex;gap:20px;}
+  .socials a{color:var(--text-muted);font-size:14px;font-weight:600;transition:var(--t);}
   .socials a:hover{color:var(--accent);}
-  .footer-inner .copy{color:var(--text-dim);font-size:13px;width:100%;text-align:center;margin-top:10px;}
+  .copy{color:var(--text-dim);font-size:13px;width:100%;text-align:center;margin-top:8px;}
 
-  @media (max-width:600px){
-    .contact-box{padding:48px 24px;}
-    .hero{padding:150px 0 70px;}
-  }
+  /* WhatsApp flotante */
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:90;width:58px;height:58px;border-radius:50%;background:var(--green);display:grid;place-items:center;box-shadow:0 12px 30px -6px rgba(37,211,102,.55);transition:var(--t);}
+  .wa-float:hover{transform:scale(1.08);}
+  .wa-float svg{width:30px;height:30px;color:#fff;}
 </style>
 </head>
 <body class="loading">
 
-<!-- ===== LOADER =====
-     Logo real de Vyral (assets/vyral-logo.png), con animación de aparición. -->
-<div id="loader">
-  <div class="loader-inner">
-    <img class="loader-image" src="assets/vyral-logo.png" alt="Vyral" />
-    <span class="loader-founder" data-i18n="loader_founder">Fundado por Juan Piedrahita</span>
-  </div>
-</div>
-<noscript><style>#loader{display:none !important;}body{overflow:auto !important;height:auto !important;}</style></noscript>
+<div id="loader"><img class="loader-image" src="assets/vyral-logo.png" alt="Vyral" /></div>
+<noscript><style>#loader{display:none !important;}body{overflow:auto !important;height:auto !important;}.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
 
-<!-- ===== NAV ===== -->
+<!-- NAV -->
 <header>
   <nav class="nav">
-    <a href="#top" class="logo">
-      <img class="logo-icon" src="assets/vyral-icon.png" width="30" height="30" alt="Vyral" />
-      VYRAL
-    </a>
+    <a href="#top" class="logo"><img src="assets/vyral-icon.png" width="30" height="30" alt="" />VYRAL</a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#trabajos" data-i18n="nav_trabajos">Trabajos</a></li>
       <li><a href="#servicios" data-i18n="nav_servicios">Servicios</a></li>
+      <li><a href="#clientes" data-i18n="nav_clientes">Clientes</a></li>
+      <li><a href="#trabajos" data-i18n="nav_trabajos">Trabajos</a></li>
       <li><a href="#proceso" data-i18n="nav_proceso">Proceso</a></li>
       <li><a href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
     </ul>
     <div class="nav-cta">
       <button class="lang-btn" data-lang-btn type="button" aria-label="Cambiar idioma / Switch language">EN</button>
-      <a href="#contacto" class="btn btn-outline" data-i18n="nav_cta">Cotizar proyecto</a>
+      <a href="#contacto" class="btn btn-primary" data-i18n="nav_cta">Hablemos</a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
     </div>
   </nav>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="hero" id="top">
-  <div class="container hero-inner">
-    <span class="eyebrow" data-i18n="hero_eyebrow">Agencia de edición de video</span>
-    <h1 data-i18n-html="hero_title">Contenido que <em>detiene el scroll</em> y trabaja para tu marca</h1>
-    <p class="lead" data-i18n="hero_lead">Vyral es un estudio de edición de video fundado por Juan Piedrahita: un equipo enfocado en ritmo, estructura y estilo visual para convertir tus grabaciones en contenido que la gente ve completo.</p>
-    <div class="hero-actions">
-      <a href="https://wa.me/573008884627?text=Hola%2C%20vi%20el%20portafolio%20de%20Vyral%20y%20quiero%20cotizar%20un%20proyecto%20de%20edici%C3%B3n%20de%20video"
-         class="btn btn-primary wa-link" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.4 9 9.9 7.8 9.7 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4.1.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.2 1 1-3.1-.2-.3C3.5 15 3 13.5 3 12c0-4.9 4-9 9-9s9 4 9 9-4 9-9 9z"/></svg>
-        <span data-i18n="hero_cta_whatsapp">Hablar por WhatsApp</span>
-      </a>
-      <a href="#trabajos" class="btn btn-outline" data-i18n="hero_cta_portfolio">Ver portafolio</a>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow" data-i18n="hero_eyebrow">Agencia de marketing digital · Colombia</span>
+      <h1 data-i18n-html="hero_title">Hacemos que tu negocio <span class="serif">se vea.</span></h1>
+      <p class="lead" data-i18n="hero_lead">Videos, redes sociales y páginas web para negocios que son buenos… pero en redes no se nota. Nosotros nos encargamos de que la gente te vea y te escriba.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/573008884627" class="btn btn-primary wa-link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.4 9 9.9 7.8 9.7 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4.1.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.2 1 1-3.1-.2-.3C3.5 15 3 13.5 3 12c0-4.9 4-9 9-9s9 4 9 9-4 9-9 9z"/></svg>
+          <span data-i18n="hero_cta_whatsapp">Escríbenos por WhatsApp</span>
+        </a>
+        <a href="#trabajos" class="btn btn-outline" data-i18n="hero_cta_portfolio">Ver trabajos</a>
+      </div>
+      <div class="hero-pills">
+        <span class="pill" data-i18n="pill1">Videos y reels</span>
+        <span class="pill" data-i18n="pill2">Manejo de redes</span>
+        <span class="pill" data-i18n="pill3">Páginas web</span>
+        <span class="pill" data-i18n="pill4">Reporte mensual</span>
+      </div>
     </div>
-    <div class="hero-tags">
-      <span class="tag" data-i18n="tag1">Reels &amp; Shorts</span>
-      <span class="tag" data-i18n="tag2">Video de marca</span>
-      <span class="tag" data-i18n="tag3">Publicidad</span>
-      <span class="tag" data-i18n="tag4">Motion &amp; subtítulos</span>
-      <span class="tag" data-i18n="tag5">Color grading</span>
+    <div class="phone" aria-hidden="true">
+      <video src="assets/vyral-logo-animation.mp4" autoplay muted loop playsinline></video>
+      <div class="bubble b1"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></i><div><b data-i18n="bubble1_t">Nuevo mensaje</b><small data-i18n="bubble1_s">"Hola, ¿cuánto cuesta?"</small></div></div>
+      <div class="bubble b2"><i style="background:var(--accent)"><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z"/></svg></i><div><b data-i18n="bubble2_t">+1 seguidor</b><small data-i18n="bubble2_s">le gustó tu reel</small></div></div>
     </div>
   </div>
 </section>
 
-<div class="marquee-wrap">
+<div class="marquee-wrap" aria-hidden="true">
   <div class="marquee">
-    <span>Reels</span><span>Shorts</span><span>Video corporativo</span><span>Publicidad</span><span>Motion graphics</span><span>Color grading</span>
-    <span>Reels</span><span>Shorts</span><span>Video corporativo</span><span>Publicidad</span><span>Motion graphics</span><span>Color grading</span>
+    <span>Videos</span><span>Reels</span><span>Redes sociales</span><span>Páginas web</span><span>Contenido que vende</span><span>Reporte mensual</span>
+    <span>Videos</span><span>Reels</span><span>Redes sociales</span><span>Páginas web</span><span>Contenido que vende</span><span>Reporte mensual</span>
   </div>
 </div>
 
-<!-- ===== PORTFOLIO ===== -->
-<section class="portfolio container" id="trabajos">
-  <div class="section-head">
-    <span class="eyebrow" data-i18n="portfolio_eyebrow">Portafolio</span>
-    <h2 data-i18n="portfolio_title">Trabajos recientes</h2>
-    <p data-i18n="portfolio_lead">Una selección de piezas editadas: desde contenido corto para redes hasta video de marca. Este portafolio se actualiza constantemente.</p>
+<!-- SERVICIOS -->
+<section class="services container" id="servicios">
+  <div class="section-head reveal">
+    <span class="eyebrow" data-i18n="svc_eyebrow">Servicios</span>
+    <h2 data-i18n-html="svc_title">Todo lo que tu negocio necesita para <span class="serif">verse</span> en redes</h2>
+    <p data-i18n="svc_lead">Un solo equipo para tus videos, tus redes y tu página web. Tú te enfocas en tu negocio.</p>
   </div>
-
-  <div class="video-grid">
-
-    <!-- VIDEO 1 — real, ya cargado -->
-    <div class="video-card" style="--ar:9/16;">
-      <div class="media">
-        <iframe src="https://www.youtube.com/embed/zhTnGKGfzXw" title="Video 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div class="meta">
-        <span class="cat" data-i18n="video_cat">Reel / Short</span>
-        <h3 data-i18n="video_title">Edición dinámica vertical</h3>
-      </div>
+  <div class="svc-grid">
+    <div class="svc reveal">
+      <span class="num">01</span>
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="3"/><path d="M11 9l3 2-3 2z" fill="currentColor"/></svg></div>
+      <h3 data-i18n="s1_t">Videos que detienen el scroll</h3>
+      <p data-i18n="s1_d">Grabas tú o grabamos nosotros. Editamos con ganchos, ritmo, subtítulos y sonido para que la gente se quede viendo.</p>
+      <ul><li data-i18n="s1_l1">Reels, TikToks y Shorts</li><li data-i18n="s1_l2">Video de marca y publicidad</li><li data-i18n="s1_l3">Motion graphics y subtítulos animados</li></ul>
     </div>
-
-    <!-- VIDEO 2 — real, ya cargado -->
-    <div class="video-card" style="--ar:9/16;">
-      <div class="media">
-        <iframe src="https://www.youtube.com/embed/C5GpWap-Isc" title="Video 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div class="meta">
-        <span class="cat" data-i18n="video_cat">Reel / Short</span>
-        <h3 data-i18n="video_title">Edición dinámica vertical</h3>
-      </div>
+    <div class="svc reveal">
+      <span class="num">02</span>
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+      <h3 data-i18n="s2_t">Manejo de redes</h3>
+      <p data-i18n="s2_d">Creamos la imagen de tu marca, planeamos el contenido del mes, publicamos en el momento justo y respondemos a tus clientes.</p>
+      <ul><li data-i18n="s2_l1">Logo, colores y estilo de marca</li><li data-i18n="s2_l2">Calendario y publicación</li><li data-i18n="s2_l3">Carruseles, historias y respuestas</li></ul>
     </div>
-
-    <!-- VIDEO 3 — real, ya cargado -->
-    <div class="video-card" style="--ar:9/16;">
-      <div class="media">
-        <iframe src="https://www.youtube.com/embed/WTA_5c9tXqg" title="Video 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div class="meta">
-        <span class="cat" data-i18n="video_cat">Reel / Short</span>
-        <h3 data-i18n="video_title">Edición dinámica vertical</h3>
-      </div>
+    <div class="svc reveal">
+      <span class="num">03</span>
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20"/><circle cx="5.5" cy="6.5" r=".5" fill="currentColor"/></svg></div>
+      <h3 data-i18n="s3_t">Páginas web que venden</h3>
+      <p data-i18n="s3_d">Una página rápida, bonita y con botón directo a WhatsApp, para que quien te encuentre en redes pueda cotizar o comprar.</p>
+      <ul><li data-i18n="s3_l1">Páginas para negocios y tiendas en línea</li><li data-i18n="s3_l2">Botón de WhatsApp y cotización</li><li data-i18n="s3_l3">Lista para Google y celular</li></ul>
     </div>
-
-    <!-- VIDEO 4 — real, ya cargado -->
-    <div class="video-card" style="--ar:9/16;">
-      <div class="media">
-        <iframe src="https://www.youtube.com/embed/fVZWNNSe8ks" title="Video 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div class="meta">
-        <span class="cat" data-i18n="video_cat">Reel / Short</span>
-        <h3 data-i18n="video_title">Edición dinámica vertical</h3>
-      </div>
-    </div>
-
-    <!-- VIDEO 5 — real, ya cargado -->
-    <div class="video-card" style="--ar:9/16;">
-      <div class="media">
-        <iframe src="https://www.youtube.com/embed/2Hs7f9tqBUo" title="Video 5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div class="meta">
-        <span class="cat" data-i18n="video_cat">Reel / Short</span>
-        <h3 data-i18n="video_title">Edición dinámica vertical</h3>
-      </div>
-    </div>
-
-    <!-- VIDEO 6 — real, ya cargado -->
-    <div class="video-card" style="--ar:9/16;">
-      <div class="media">
-        <iframe src="https://www.youtube.com/embed/eIvOLEMRBhs" title="Video 6" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div class="meta">
-        <span class="cat" data-i18n="video_cat">Reel / Short</span>
-        <h3 data-i18n="video_title">Edición dinámica vertical</h3>
-      </div>
-    </div>
-
-    <!-- VIDEO 7 — real, ya cargado -->
-    <div class="video-card" style="--ar:9/16;">
-      <div class="media">
-        <iframe src="https://www.youtube.com/embed/sX_b49ScI8w" title="Video 7" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div class="meta">
-        <span class="cat" data-i18n="video_cat">Reel / Short</span>
-        <h3 data-i18n="video_title">Edición dinámica vertical</h3>
-      </div>
-    </div>
-
-    <!-- VIDEO 8 — real, ya cargado -->
-    <div class="video-card" style="--ar:9/16;">
-      <div class="media">
-        <iframe src="https://www.youtube.com/embed/GfjsV_d40S0" title="Video 8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div class="meta">
-        <span class="cat" data-i18n="video_cat">Reel / Short</span>
-        <h3 data-i18n="video_title">Edición dinámica vertical</h3>
-      </div>
-    </div>
-
-    <!-- VIDEO 9 -->
-    <div class="video-card placeholder" style="--ar:16/9;">
-      <div class="media"><div class="plus">+</div><span data-i18n="placeholder9_label">Video 9 — próximamente</span></div>
-      <div class="meta"><span class="cat" data-i18n="placeholder_cat">Espacio disponible</span><h3 data-i18n="placeholder_title">Agrega tu siguiente proyecto</h3></div>
-    </div>
-
-    <!-- VIDEO 10 -->
-    <div class="video-card placeholder" style="--ar:16/9;">
-      <div class="media"><div class="plus">+</div><span data-i18n="placeholder10_label">Video 10 — próximamente</span></div>
-      <div class="meta"><span class="cat" data-i18n="placeholder_cat">Espacio disponible</span><h3 data-i18n="placeholder_title">Agrega tu siguiente proyecto</h3></div>
-    </div>
-
+  </div>
+  <div class="report reveal">
+    <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+    <div><h3 data-i18n="rep_t">Y cada mes, un reporte claro</h3><p data-i18n="rep_d">Qué video funcionó, cuánta gente te vio y cuántos te escribieron. Sin palabras raras.</p></div>
   </div>
 </section>
 
-<!-- ===== SERVICIOS ===== -->
-<section class="services" id="servicios">
+<!-- CLIENTES -->
+<section class="clients" id="clientes">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow" data-i18n="services_eyebrow">Servicios</span>
-      <h2 data-i18n="services_title">En qué podemos ayudarte</h2>
-      <p data-i18n="services_lead">Edición pensada para el objetivo de cada pieza: retener, explicar o vender.</p>
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="cli_eyebrow">Clientes</span>
+      <h2 data-i18n-html="cli_title">Negocios que ya <span class="serif">se están viendo</span></h2>
+      <p data-i18n="cli_lead">Trabajamos con negocios reales de distintos sectores. Estos son algunos de ellos.</p>
     </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="3"/><path d="M12 18h.01"/></svg></div>
-        <h3 data-i18n="svc1_title">Reels &amp; Shorts</h3>
-        <p data-i18n="svc1_desc">Contenido vertical con ritmo, cortes y ganchos pensados para redes sociales.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M9 9l6 3-6 3V9z"/></svg></div>
-        <h3 data-i18n="svc2_title">Video de marca</h3>
-        <p data-i18n="svc2_desc">Piezas para redes o web que comunican identidad y valor de forma clara.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-7-7 18-2-8-9-3z"/></svg></div>
-        <h3 data-i18n="svc3_title">Video publicitario</h3>
-        <p data-i18n="svc3_desc">Edición orientada a conversión: estructura de ads, ganchos y llamados a la acción.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h3 data-i18n="svc4_title">Motion &amp; subtítulos</h3>
-        <p data-i18n="svc4_desc">Textos animados, subtítulos dinámicos y gráficos que refuerzan el mensaje.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div>
-        <h3 data-i18n="svc5_title">Color grading</h3>
-        <p data-i18n="svc5_desc">Corrección y ajuste de color para una imagen consistente y con carácter propio.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H7l-3 3V4z"/></svg></div>
-        <h3 data-i18n="svc6_title">Sonido &amp; música</h3>
-        <p data-i18n="svc6_desc">Selección musical, mezcla básica y efectos que le dan cuerpo a cada edición.</p>
-      </div>
+    <div class="client-grid">
+      <div class="client reveal"><div class="mono">M</div><h3>Madcor Muebles</h3><p class="type" data-i18n="c1_type">Muebles a la medida</p><div class="tags"><span data-i18n="tag_redes">Redes</span><span data-i18n="tag_video">Video</span><span data-i18n="tag_web">Web</span></div></div>
+      <div class="client reveal"><div class="mono">F</div><h3>Florida Destino Inmobiliaria</h3><p class="type" data-i18n="c2_type">Inmobiliaria</p><div class="tags"><span data-i18n="tag_edicion">Edición de video</span></div></div>
+      <div class="client reveal"><div class="mono">C</div><h3>Construcimper</h3><p class="type" data-i18n="c3_type">Construcción</p><div class="tags"><span data-i18n="tag_redes">Redes</span><span data-i18n="tag_video">Video</span></div></div>
+      <div class="client reveal"><div class="mono">F</div><h3>FindDrop</h3><p class="type" data-i18n="c4_type">Tienda en línea</p><div class="tags"><span data-i18n="tag_web">Web</span><span data-i18n="tag_carruseles">Carruseles</span></div></div>
+      <div class="client reveal"><div class="mono">N</div><h3>Nataa Morales</h3><p class="type" data-i18n="c5_type">Creadora de YouTube</p><div class="tags"><span data-i18n="tag_edicion">Edición de video</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- ===== PROCESO ===== -->
+<!-- TESTIMONIO -->
+<section class="quote container">
+  <div class="quote-box reveal">
+    <span class="mark">“</span>
+    <blockquote data-i18n="quote">Desde que trabajo con Vyral, el trabajo no para.</blockquote>
+    <cite><b>Madcor Muebles</b> · <span data-i18n="quote_role">Dueño</span></cite>
+  </div>
+</section>
+
+<!-- TRABAJOS -->
+<section class="portfolio container" id="trabajos">
+  <div class="section-head reveal">
+    <span class="eyebrow" data-i18n="port_eyebrow">Trabajos</span>
+    <h2 data-i18n-html="port_title">Videos que la gente <span class="serif">sí se queda viendo</span></h2>
+    <p data-i18n="port_lead">Una muestra de reels y videos que hemos editado para nuestros clientes.</p>
+  </div>
+  <div class="video-grid">
+    <div class="video-card reveal"><div class="media"><iframe src="https://www.youtube.com/embed/zhTnGKGfzXw" title="Video Vyral 1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+    <div class="video-card reveal"><div class="media"><iframe src="https://www.youtube.com/embed/C5GpWap-Isc" title="Video Vyral 2" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+    <div class="video-card reveal"><div class="media"><iframe src="https://www.youtube.com/embed/WTA_5c9tXqg" title="Video Vyral 3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+    <div class="video-card reveal"><div class="media"><iframe src="https://www.youtube.com/embed/fVZWNNSe8ks" title="Video Vyral 4" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+    <div class="video-card reveal"><div class="media"><iframe src="https://www.youtube.com/embed/2Hs7f9tqBUo" title="Video Vyral 5" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+    <div class="video-card reveal"><div class="media"><iframe src="https://www.youtube.com/embed/eIvOLEMRBhs" title="Video Vyral 6" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+    <div class="video-card reveal"><div class="media"><iframe src="https://www.youtube.com/embed/sX_b49ScI8w" title="Video Vyral 7" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+    <div class="video-card reveal"><div class="media"><iframe src="https://www.youtube.com/embed/GfjsV_d40S0" title="Video Vyral 8" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></div>
+  </div>
+</section>
+
+<!-- PÁGINAS WEB -->
+<section class="webs" id="webs">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="web_eyebrow">Páginas web</span>
+      <h2 data-i18n-html="web_title">Páginas hechas <span class="serif">por nosotros</span></h2>
+      <p data-i18n="web_lead">Haz clic y míralas funcionando.</p>
+    </div>
+    <div class="web-grid">
+      <a class="web reveal" href="https://madcormuebles.com" target="_blank" rel="noopener">
+        <div class="bar"><i></i><i></i><i></i><span>madcormuebles.com</span></div>
+        <img src="assets/web-madcor.jpg" alt="Página web de Madcor Muebles" loading="lazy" />
+        <div class="meta"><div><h3>Madcor Muebles</h3><p data-i18n="w1_d">Muebles a la medida, con cotización por WhatsApp.</p></div><span class="go" data-i18n="ver_pagina">Ver página →</span></div>
+      </a>
+      <a class="web reveal" href="https://finddropp.myshopify.com" target="_blank" rel="noopener">
+        <div class="bar"><i></i><i></i><i></i><span>finddropp.myshopify.com</span></div>
+        <img src="assets/web-finddrop.jpg" alt="Tienda en línea de FindDrop" loading="lazy" />
+        <div class="meta"><div><h3>FindDrop</h3><p data-i18n="w2_d">Tienda en línea en Shopify: un hallazgo por semana.</p></div><span class="go" data-i18n="ver_pagina">Ver página →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
 <section class="process container" id="proceso">
-  <div class="section-head">
-    <span class="eyebrow" data-i18n="process_eyebrow">Cómo trabajamos</span>
-    <h2 data-i18n="process_title">Un proceso simple y directo</h2>
+  <div class="section-head reveal">
+    <span class="eyebrow" data-i18n="proc_eyebrow">Cómo trabajamos</span>
+    <h2 data-i18n-html="proc_title">Simple, claro y <span class="serif">sin enredos</span></h2>
   </div>
   <div class="steps">
-    <div class="step">
-      <span class="num">01</span>
-      <h3 data-i18n="step1_title">Brief</h3>
-      <p data-i18n="step1_desc">Nos cuentas el objetivo, el tono de marca y el material disponible.</p>
-    </div>
-    <div class="step">
-      <span class="num">02</span>
-      <h3 data-i18n="step2_title">Edición</h3>
-      <p data-i18n="step2_desc">Armamos una primera versión con estructura, ritmo y estilo visual definido.</p>
-    </div>
-    <div class="step">
-      <span class="num">03</span>
-      <h3 data-i18n="step3_title">Revisión</h3>
-      <p data-i18n="step3_desc">Ajustamos juntos hasta que la pieza refleje exactamente lo que necesitas.</p>
-    </div>
-    <div class="step">
-      <span class="num">04</span>
-      <h3 data-i18n="step4_title">Entrega</h3>
-      <p data-i18n="step4_desc">Recibes los archivos finales listos para publicar en cada formato.</p>
-    </div>
+    <div class="step reveal"><span class="num">01</span><h3 data-i18n="p1_t">Diagnóstico</h3><p data-i18n="p1_d">Conocemos tu negocio, revisamos tus redes y entendemos a quién le quieres vender.</p></div>
+    <div class="step reveal"><span class="num">02</span><h3 data-i18n="p2_t">Plan de contenido</h3><p data-i18n="p2_d">Armamos las ideas y el calendario del mes, con la imagen de tu marca.</p></div>
+    <div class="step reveal"><span class="num">03</span><h3 data-i18n="p3_t">Grabamos, editamos y publicamos</h3><p data-i18n="p3_d">Nos encargamos del contenido de principio a fin y respondemos a tus clientes.</p></div>
+    <div class="step reveal"><span class="num">04</span><h3 data-i18n="p4_t">Reporte mensual</h3><p data-i18n="p4_d">Te mostramos qué funcionó y ajustamos para el siguiente mes.</p></div>
   </div>
 </section>
 
-<!-- ===== CONTACTO ===== -->
+<!-- CONTACTO -->
 <section class="contact container" id="contacto">
-  <div class="contact-box">
-    <span class="eyebrow" style="justify-content:center;" data-i18n="contact_eyebrow">Trabajemos juntos</span>
-    <h2 data-i18n="contact_title">¿Tienes un proyecto en mente?</h2>
-    <p data-i18n="contact_lead">Escríbenos y hablamos sobre tu marca, tus objetivos y cómo la edición de video puede ayudarte a lograrlos.</p>
+  <div class="contact-box reveal">
+    <span class="eyebrow" style="justify-content:center;" data-i18n="ct_eyebrow">Hablemos</span>
+    <h2 data-i18n-html="ct_title">¿Tu negocio es bueno? <span class="serif">Que se note.</span></h2>
+    <p data-i18n="ct_lead">Escríbenos, cuéntanos de tu negocio y te decimos cómo lo haríamos. Sin compromiso.</p>
     <div class="contact-actions">
-      <a href="https://wa.me/573008884627?text=Hola%2C%20vi%20el%20portafolio%20de%20Vyral%20y%20quiero%20cotizar%20un%20proyecto%20de%20edici%C3%B3n%20de%20video"
-         class="btn btn-primary wa-link" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.4 9 9.9 7.8 9.7 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4.1.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.2 1 1-3.1-.2-.3C3.5 15 3 13.5 3 12c0-4.9 4-9 9-9s9 4 9 9-4 9-9 9z"/></svg>
+      <a href="https://wa.me/573008884627" class="btn btn-primary wa-link" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.2 1 1-3.1-.2-.3C3.5 15 3 13.5 3 12c0-4.9 4-9 9-9s9 4 9 9-4 9-9 9z"/></svg>
         +57 300 888 4627
       </a>
-      <!-- Instagram: reemplaza "TU_USUARIO" por tu usuario real de Instagram -->
-      <a href="https://instagram.com/TU_USUARIO" class="btn btn-outline" target="_blank" rel="noopener">
+      <a href="https://instagram.com/vyralagencyy" class="btn btn-outline" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-        <span data-i18n="contact_instagram">Instagram</span>
+        @vyralagencyy
       </a>
     </div>
-    <p class="contact-note" data-i18n="contact_note">Respondemos directamente por WhatsApp — usualmente en menos de 24 horas.</p>
+    <p class="contact-note" data-i18n="ct_note">Respondemos por WhatsApp, normalmente en menos de 24 horas.</p>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer>
   <div class="container footer-inner">
-    <a href="#top" class="logo">
-      <img class="logo-icon" src="assets/vyral-icon.png" width="26" height="26" alt="Vyral" />
-      VYRAL
-    </a>
+    <a href="#top" class="logo"><img src="assets/vyral-icon.png" width="26" height="26" alt="" />VYRAL</a>
     <div class="socials">
       <a href="https://wa.me/573008884627" target="_blank" rel="noopener">WhatsApp</a>
-      <!-- Instagram: reemplaza "TU_USUARIO" por tu usuario real -->
-      <a href="https://instagram.com/TU_USUARIO" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://instagram.com/vyralagencyy" target="_blank" rel="noopener">Instagram</a>
     </div>
-    <p class="copy" data-i18n="footer_copy">© 2026 Vyral — Agencia de edición de video. Fundado por Juan Piedrahita.</p>
+    <p class="copy" data-i18n="footer_copy">© 2026 Vyral — Videos, redes y páginas web. Colombia.</p>
   </div>
 </footer>
 
+<a class="wa-float wa-link" href="https://wa.me/573008884627" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.4 9 9.9 7.8 9.7 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4.1.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5c1.5.8 3.3 1.3 5.2 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.3c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.2 1 1-3.1-.2-.3C3.5 15 3 13.5 3 12c0-4.9 4-9 9-9s9 4 9 9-4 9-9 9z"/></svg>
+</a>
+
 <script>
-  // ===== Menú móvil =====
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
+  // Menú móvil
+  const navToggle = document.getElementById('navToggle'), navLinks = document.getElementById('navLinks');
   navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-  // ===== Pantalla de carga =====
-  // Animación en CSS/SVG puro, sin archivo externo. Si alargas o acortas las
-  // animaciones del logo (arriba en el CSS), ajusta minDelay para que coincida.
-  (function () {
-    const loader = document.getElementById('loader');
-    const minDelay = 1700;
-    setTimeout(() => {
-      loader.classList.add('loader-hide');
-      document.body.classList.remove('loading');
-      setTimeout(() => { loader.style.display = 'none'; }, 650);
-    }, minDelay);
-  })();
+  // Pantalla de carga
+  setTimeout(() => { const l = document.getElementById('loader'); l.classList.add('loader-hide'); document.body.classList.remove('loading'); setTimeout(() => { l.style.display = 'none'; }, 650); }, 1400);
 
-  // ===== Idioma automático (ES/EN) según navegador, con toggle manual =====
+  // Aparición al hacer scroll
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 }) : null;
+  document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+
+  // Idioma ES / EN
   const i18n = {
     es: {
-      loader_founder: "Fundado por Juan Piedrahita",
-      nav_trabajos: "Trabajos", nav_servicios: "Servicios", nav_proceso: "Proceso", nav_contacto: "Contacto",
-      nav_cta: "Cotizar proyecto",
-      hero_eyebrow: "Agencia de edición de video",
-      hero_title: 'Contenido que <em>detiene el scroll</em> y trabaja para tu marca',
-      hero_lead: "Vyral es un estudio de edición de video fundado por Juan Piedrahita: un equipo enfocado en ritmo, estructura y estilo visual para convertir tus grabaciones en contenido que la gente ve completo.",
-      hero_cta_whatsapp: "Hablar por WhatsApp", hero_cta_portfolio: "Ver portafolio",
-      tag1: "Reels & Shorts", tag2: "Video de marca", tag3: "Publicidad", tag4: "Motion & subtítulos", tag5: "Color grading",
-      portfolio_eyebrow: "Portafolio", portfolio_title: "Trabajos recientes",
-      portfolio_lead: "Una selección de piezas editadas: desde contenido corto para redes hasta video de marca. Este portafolio se actualiza constantemente.",
-      video_cat: "Reel / Short", video_title: "Edición dinámica vertical",
-      placeholder_cat: "Espacio disponible", placeholder_title: "Agrega tu siguiente proyecto",
-      placeholder5_label: "Video 5 — próximamente", placeholder6_label: "Video 6 — próximamente",
-      placeholder7_label: "Video 7 — próximamente", placeholder8_label: "Video 8 — próximamente",
-      placeholder9_label: "Video 9 — próximamente", placeholder10_label: "Video 10 — próximamente",
-      services_eyebrow: "Servicios", services_title: "En qué podemos ayudarte",
-      services_lead: "Edición pensada para el objetivo de cada pieza: retener, explicar o vender.",
-      svc1_title: "Reels & Shorts", svc1_desc: "Contenido vertical con ritmo, cortes y ganchos pensados para redes sociales.",
-      svc2_title: "Video de marca", svc2_desc: "Piezas para redes o web que comunican identidad y valor de forma clara.",
-      svc3_title: "Video publicitario", svc3_desc: "Edición orientada a conversión: estructura de ads, ganchos y llamados a la acción.",
-      svc4_title: "Motion & subtítulos", svc4_desc: "Textos animados, subtítulos dinámicos y gráficos que refuerzan el mensaje.",
-      svc5_title: "Color grading", svc5_desc: "Corrección y ajuste de color para una imagen consistente y con carácter propio.",
-      svc6_title: "Sonido & música", svc6_desc: "Selección musical, mezcla básica y efectos que le dan cuerpo a cada edición.",
-      process_eyebrow: "Cómo trabajamos", process_title: "Un proceso simple y directo",
-      step1_title: "Brief", step1_desc: "Nos cuentas el objetivo, el tono de marca y el material disponible.",
-      step2_title: "Edición", step2_desc: "Armamos una primera versión con estructura, ritmo y estilo visual definido.",
-      step3_title: "Revisión", step3_desc: "Ajustamos juntos hasta que la pieza refleje exactamente lo que necesitas.",
-      step4_title: "Entrega", step4_desc: "Recibes los archivos finales listos para publicar en cada formato.",
-      contact_eyebrow: "Trabajemos juntos", contact_title: "¿Tienes un proyecto en mente?",
-      contact_lead: "Escríbenos y hablamos sobre tu marca, tus objetivos y cómo la edición de video puede ayudarte a lograrlos.",
-      contact_instagram: "Instagram",
-      contact_note: "Respondemos directamente por WhatsApp — usualmente en menos de 24 horas.",
-      footer_copy: "© 2026 Vyral — Agencia de edición de video. Fundado por Juan Piedrahita."
+      nav_servicios:"Servicios", nav_clientes:"Clientes", nav_trabajos:"Trabajos", nav_proceso:"Proceso", nav_contacto:"Contacto", nav_cta:"Hablemos",
+      hero_eyebrow:"Agencia de marketing digital · Colombia",
+      hero_title:'Hacemos que tu negocio <span class="serif">se vea.</span>',
+      hero_lead:"Videos, redes sociales y páginas web para negocios que son buenos… pero en redes no se nota. Nosotros nos encargamos de que la gente te vea y te escriba.",
+      hero_cta_whatsapp:"Escríbenos por WhatsApp", hero_cta_portfolio:"Ver trabajos",
+      pill1:"Videos y reels", pill2:"Manejo de redes", pill3:"Páginas web", pill4:"Reporte mensual",
+      bubble1_t:"Nuevo mensaje", bubble1_s:"\"Hola, ¿cuánto cuesta?\"", bubble2_t:"+1 seguidor", bubble2_s:"le gustó tu reel",
+      svc_eyebrow:"Servicios", svc_title:'Todo lo que tu negocio necesita para <span class="serif">verse</span> en redes',
+      svc_lead:"Un solo equipo para tus videos, tus redes y tu página web. Tú te enfocas en tu negocio.",
+      s1_t:"Videos que detienen el scroll", s1_d:"Grabas tú o grabamos nosotros. Editamos con ganchos, ritmo, subtítulos y sonido para que la gente se quede viendo.",
+      s1_l1:"Reels, TikToks y Shorts", s1_l2:"Video de marca y publicidad", s1_l3:"Motion graphics y subtítulos animados",
+      s2_t:"Manejo de redes", s2_d:"Creamos la imagen de tu marca, planeamos el contenido del mes, publicamos en el momento justo y respondemos a tus clientes.",
+      s2_l1:"Logo, colores y estilo de marca", s2_l2:"Calendario y publicación", s2_l3:"Carruseles, historias y respuestas",
+      s3_t:"Páginas web que venden", s3_d:"Una página rápida, bonita y con botón directo a WhatsApp, para que quien te encuentre en redes pueda cotizar o comprar.",
+      s3_l1:"Páginas para negocios y tiendas en línea", s3_l2:"Botón de WhatsApp y cotización", s3_l3:"Lista para Google y celular",
+      rep_t:"Y cada mes, un reporte claro", rep_d:"Qué video funcionó, cuánta gente te vio y cuántos te escribieron. Sin palabras raras.",
+      cli_eyebrow:"Clientes", cli_title:'Negocios que ya <span class="serif">se están viendo</span>', cli_lead:"Trabajamos con negocios reales de distintos sectores. Estos son algunos de ellos.",
+      c1_type:"Muebles a la medida", c2_type:"Inmobiliaria", c3_type:"Construcción", c4_type:"Tienda en línea", c5_type:"Creadora de YouTube",
+      tag_redes:"Redes", tag_video:"Video", tag_web:"Web", tag_edicion:"Edición de video", tag_carruseles:"Carruseles",
+      quote:"Desde que trabajo con Vyral, el trabajo no para.", quote_role:"Dueño",
+      port_eyebrow:"Trabajos", port_title:'Videos que la gente <span class="serif">sí se queda viendo</span>', port_lead:"Una muestra de reels y videos que hemos editado para nuestros clientes.",
+      web_eyebrow:"Páginas web", web_title:'Páginas hechas <span class="serif">por nosotros</span>', web_lead:"Haz clic y míralas funcionando.",
+      w1_d:"Muebles a la medida, con cotización por WhatsApp.", w2_d:"Tienda en línea en Shopify: un hallazgo por semana.", ver_pagina:"Ver página →",
+      proc_eyebrow:"Cómo trabajamos", proc_title:'Simple, claro y <span class="serif">sin enredos</span>',
+      p1_t:"Diagnóstico", p1_d:"Conocemos tu negocio, revisamos tus redes y entendemos a quién le quieres vender.",
+      p2_t:"Plan de contenido", p2_d:"Armamos las ideas y el calendario del mes, con la imagen de tu marca.",
+      p3_t:"Grabamos, editamos y publicamos", p3_d:"Nos encargamos del contenido de principio a fin y respondemos a tus clientes.",
+      p4_t:"Reporte mensual", p4_d:"Te mostramos qué funcionó y ajustamos para el siguiente mes.",
+      ct_eyebrow:"Hablemos", ct_title:'¿Tu negocio es bueno? <span class="serif">Que se note.</span>',
+      ct_lead:"Escríbenos, cuéntanos de tu negocio y te decimos cómo lo haríamos. Sin compromiso.",
+      ct_note:"Respondemos por WhatsApp, normalmente en menos de 24 horas.",
+      footer_copy:"© 2026 Vyral — Videos, redes y páginas web. Colombia."
     },
     en: {
-      loader_founder: "Founded by Juan Piedrahita",
-      nav_trabajos: "Work", nav_servicios: "Services", nav_proceso: "Process", nav_contacto: "Contact",
-      nav_cta: "Get a quote",
-      hero_eyebrow: "Video editing agency",
-      hero_title: 'Content that <em>stops the scroll</em> and works for your brand',
-      hero_lead: "Vyral is a video editing studio founded by Juan Piedrahita: a team focused on pace, structure and visual style that turn your footage into content people watch all the way through.",
-      hero_cta_whatsapp: "Chat on WhatsApp", hero_cta_portfolio: "See portfolio",
-      tag1: "Reels & Shorts", tag2: "Brand video", tag3: "Advertising", tag4: "Motion & captions", tag5: "Color grading",
-      portfolio_eyebrow: "Portfolio", portfolio_title: "Recent work",
-      portfolio_lead: "A selection of edited pieces: from short social content to brand video. This portfolio is updated constantly.",
-      video_cat: "Reel / Short", video_title: "Dynamic vertical edit",
-      placeholder_cat: "Slot available", placeholder_title: "Add your next project",
-      placeholder5_label: "Video 5 — coming soon", placeholder6_label: "Video 6 — coming soon",
-      placeholder7_label: "Video 7 — coming soon", placeholder8_label: "Video 8 — coming soon",
-      placeholder9_label: "Video 9 — coming soon", placeholder10_label: "Video 10 — coming soon",
-      services_eyebrow: "Services", services_title: "How we can help you",
-      services_lead: "Editing built around each piece's goal: retain, explain or sell.",
-      svc1_title: "Reels & Shorts", svc1_desc: "Vertical content with pace, cuts and hooks built for social media.",
-      svc2_title: "Brand video", svc2_desc: "Pieces for social or web that communicate identity and value clearly.",
-      svc3_title: "Advertising video", svc3_desc: "Conversion-focused editing: ad structure, hooks and calls to action.",
-      svc4_title: "Motion & captions", svc4_desc: "Animated text, dynamic captions and graphics that reinforce the message.",
-      svc5_title: "Color grading", svc5_desc: "Color correction and grading for a consistent, distinctive look.",
-      svc6_title: "Sound & music", svc6_desc: "Music selection, basic mixing and sound effects that give each edit body.",
-      process_eyebrow: "How we work", process_title: "A simple, direct process",
-      step1_title: "Brief", step1_desc: "You tell us the goal, brand tone and the material you have.",
-      step2_title: "Editing", step2_desc: "We put together a first cut with structure, pace and a defined visual style.",
-      step3_title: "Review", step3_desc: "We refine it together until it reflects exactly what you need.",
-      step4_title: "Delivery", step4_desc: "You get the final files ready to publish in every format.",
-      contact_eyebrow: "Let's work together", contact_title: "Have a project in mind?",
-      contact_lead: "Message us and let's talk about your brand, your goals, and how video editing can help you reach them.",
-      contact_instagram: "Instagram",
-      contact_note: "We reply directly on WhatsApp — usually within 24 hours.",
-      footer_copy: "© 2026 Vyral — Video editing agency. Founded by Juan Piedrahita."
+      nav_servicios:"Services", nav_clientes:"Clients", nav_trabajos:"Work", nav_proceso:"Process", nav_contacto:"Contact", nav_cta:"Let's talk",
+      hero_eyebrow:"Digital marketing agency · Colombia",
+      hero_title:'We make your business <span class="serif">get seen.</span>',
+      hero_lead:"Videos, social media and websites for businesses that are great… but it doesn't show online. We make sure people see you and message you.",
+      hero_cta_whatsapp:"Message us on WhatsApp", hero_cta_portfolio:"See our work",
+      pill1:"Videos & reels", pill2:"Social media", pill3:"Websites", pill4:"Monthly report",
+      bubble1_t:"New message", bubble1_s:"\"Hi, how much is it?\"", bubble2_t:"+1 follower", bubble2_s:"liked your reel",
+      svc_eyebrow:"Services", svc_title:'Everything your business needs to <span class="serif">stand out</span> online',
+      svc_lead:"One team for your videos, your social media and your website. You focus on your business.",
+      s1_t:"Scroll-stopping videos", s1_d:"You shoot or we shoot. We edit with hooks, pace, captions and sound so people keep watching.",
+      s1_l1:"Reels, TikToks & Shorts", s1_l2:"Brand & ad videos", s1_l3:"Motion graphics & animated captions",
+      s2_t:"Social media management", s2_d:"We build your brand look, plan the month's content, post at the right time and reply to your customers.",
+      s2_l1:"Logo, colors & brand style", s2_l2:"Content calendar & posting", s2_l3:"Carousels, stories & replies",
+      s3_t:"Websites that sell", s3_d:"A fast, good-looking site with a direct WhatsApp button, so people who find you on social can ask for a quote or buy.",
+      s3_l1:"Business sites & online stores", s3_l2:"WhatsApp & quote buttons", s3_l3:"Ready for Google and mobile",
+      rep_t:"And every month, a clear report", rep_d:"Which video worked, how many people saw you and how many messaged you. No jargon.",
+      cli_eyebrow:"Clients", cli_title:'Businesses that are <span class="serif">already being seen</span>', cli_lead:"We work with real businesses across different industries. Here are some of them.",
+      c1_type:"Custom furniture", c2_type:"Real estate", c3_type:"Construction", c4_type:"Online store", c5_type:"YouTube creator",
+      tag_redes:"Social", tag_video:"Video", tag_web:"Web", tag_edicion:"Video editing", tag_carruseles:"Carousels",
+      quote:"Since I started working with Vyral, the work hasn't stopped.", quote_role:"Owner",
+      port_eyebrow:"Work", port_title:'Videos people <span class="serif">actually watch</span>', port_lead:"A sample of reels and videos we've edited for our clients.",
+      web_eyebrow:"Websites", web_title:'Sites built <span class="serif">by us</span>', web_lead:"Click to see them live.",
+      w1_d:"Custom furniture, with quotes via WhatsApp.", w2_d:"Shopify online store: one find per week.", ver_pagina:"Visit site →",
+      proc_eyebrow:"How we work", proc_title:'Simple, clear and <span class="serif">hassle-free</span>',
+      p1_t:"Discovery", p1_d:"We get to know your business, review your social media and understand who you want to sell to.",
+      p2_t:"Content plan", p2_d:"We put together the month's ideas and calendar, in your brand's look.",
+      p3_t:"We shoot, edit and post", p3_d:"We handle the content from start to finish and reply to your customers.",
+      p4_t:"Monthly report", p4_d:"We show you what worked and adjust for the next month.",
+      ct_eyebrow:"Let's talk", ct_title:'Is your business great? <span class="serif">Let it show.</span>',
+      ct_lead:"Message us, tell us about your business and we'll tell you how we'd do it. No commitment.",
+      ct_note:"We reply on WhatsApp, usually within 24 hours.",
+      footer_copy:"© 2026 Vyral — Videos, social media and websites. Colombia."
     }
   };
-
-  const waMessages = {
-    es: "Hola, vi el portafolio de Vyral y quiero cotizar un proyecto de edición de video",
-    en: "Hi, I saw Vyral's portfolio and I'd like to get a quote for a video editing project"
-  };
-
-  const pageTitles = {
-    es: "Vyral | Agencia de Edición de Video",
-    en: "Vyral | Video Editing Agency"
-  };
-
+  const waMessages = { es:"Hola, vi la página de Vyral y quiero saber cómo pueden ayudar a mi negocio", en:"Hi, I saw Vyral's website and I'd like to know how you can help my business" };
+  const pageTitles = { es:"Vyral | Videos, redes y páginas web para negocios", en:"Vyral | Videos, social media & websites for businesses" };
   let currentLang = 'es';
-
-  function applyLang(lang) {
-    currentLang = lang;
-    document.documentElement.lang = lang;
-    document.title = pageTitles[lang];
-
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (i18n[lang][key] !== undefined) el.textContent = i18n[lang][key];
-    });
-    document.querySelectorAll('[data-i18n-html]').forEach(el => {
-      const key = el.getAttribute('data-i18n-html');
-      if (i18n[lang][key] !== undefined) el.innerHTML = i18n[lang][key];
-    });
-    document.querySelectorAll('.wa-link').forEach(a => {
-      a.href = a.href.split('?')[0] + '?text=' + encodeURIComponent(waMessages[lang]);
-    });
-    document.querySelectorAll('[data-lang-btn]').forEach(btn => {
-      btn.textContent = lang === 'es' ? 'EN' : 'ES';
-    });
-
+  function applyLang(lang){
+    currentLang = lang; document.documentElement.lang = lang; document.title = pageTitles[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => { const k = el.getAttribute('data-i18n'); if (i18n[lang][k] !== undefined) el.textContent = i18n[lang][k]; });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => { const k = el.getAttribute('data-i18n-html'); if (i18n[lang][k] !== undefined) el.innerHTML = i18n[lang][k]; });
+    document.querySelectorAll('.wa-link').forEach(a => { a.href = a.href.split('?')[0] + '?text=' + encodeURIComponent(waMessages[lang]); });
+    document.querySelectorAll('[data-lang-btn]').forEach(b => { b.textContent = lang === 'es' ? 'EN' : 'ES'; });
     try { localStorage.setItem('vyral-lang', lang); } catch (e) {}
   }
-
-  function detectLang() {
-    try {
-      const saved = localStorage.getItem('vyral-lang');
-      if (saved === 'es' || saved === 'en') return saved;
-    } catch (e) {}
-    const nav = (navigator.language || navigator.userLanguage || 'es').toLowerCase();
-    return nav.startsWith('en') ? 'en' : 'es';
+  function detectLang(){
+    try { const s = localStorage.getItem('vyral-lang'); if (s === 'es' || s === 'en') return s; } catch (e) {}
+    return (navigator.language || 'es').toLowerCase().startsWith('en') ? 'en' : 'es';
   }
-
   applyLang(detectLang());
-
-  document.querySelectorAll('[data-lang-btn]').forEach(btn => {
-    btn.addEventListener('click', () => applyLang(currentLang === 'es' ? 'en' : 'es'));
-  });
+  document.querySelectorAll('[data-lang-btn]').forEach(b => b.addEventListener('click', () => applyLang(currentLang === 'es' ? 'en' : 'es')));
 </script>
-
 </body>
 </html>
